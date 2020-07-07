@@ -1,5 +1,5 @@
 # -Python-Homework-
-PayBank                               
+PyBank                               
 
 # Creating a Python script that analyses the records to calculate each of the following
 
