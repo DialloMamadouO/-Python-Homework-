@@ -1,7 +1,6 @@
 # -Python-Homework-
 PayBank                               
 
-In [4]:
 # Creating a Python script that analyses the records to calculate each of the following
 
 # Import the pathlib and csv library
@@ -15,11 +14,17 @@ In [14]:
 # Initialize racords
 
 total_months = 0
+
 month_of_change = []
+
 net_change_list = []
+
 greatest_increase = ["", 0]
+
 greatest_decrease = ["", 999999]
+
 total_net = 0
+
 In [22]:
 # Open the csv file as object
 
@@ -71,10 +76,15 @@ with open(csvfile_to_output, "w+") as csvfile:
 Ine 
 
 PyBank/main.ipynb
-PyBank/main.ipynb
-Total Months: 6
-Total: $5207304
-Average Change: $0.0
-Greatest Increase in Profits:  ($0
-Greatest Decrease in profits: Jan-2010($0)
 
+PyBank/main.ipynb
+
+Total Months: 6
+
+Total: $5207304
+
+Average Change: $0.0
+
+Greatest Increase in Profits:  ($0
+
+Greatest Decrease in profits: Jan-2010($0)
