@@ -1,0 +1,7 @@
+PyBank/main.ipynb
+PyBank/main.ipynb
+Total Months: 6
+Total: $5207304
+Average Change: $0.0
+Greatest Increase in Profits:  ($0
+Greatest Decrease in profits: Jan-2010($0)
