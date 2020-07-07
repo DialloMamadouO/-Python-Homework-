@@ -69,3 +69,12 @@ with open(csvfile_to_output, "w+") as csvfile:
     csvfile.write(f"Greatest Increase in Profits: {greatest_increase[0]} (${greatest_increase[1]}\n")
     csvfile.write(f"Greatest Decrease in profits: {greatest_decrease[0]}(${greatest_decrease[1]})\n")
 Ine 
+
+PyBank/main.ipynb
+PyBank/main.ipynb
+Total Months: 6
+Total: $5207304
+Average Change: $0.0
+Greatest Increase in Profits:  ($0
+Greatest Decrease in profits: Jan-2010($0)
+
