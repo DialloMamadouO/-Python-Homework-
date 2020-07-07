@@ -7,11 +7,12 @@ PyBank
 from pathlib import Path
 
 import csv
-In [11]:
+
 # Set the file path
 csvpath = Path("../PyBank/PyBank_Resources_budget_data.csv")
+
 csvfile_to_output = Path("../PyBank/main.txt")
-In [14]:
+
 # Initialize racords
 
 total_months = 0
@@ -26,7 +27,7 @@ greatest_decrease = ["", 999999]
 
 total_net = 0
 
-In [22]:
+
 # Open the csv file as object
 
 with open(csvpath, 'r') as csvfile:
@@ -66,7 +67,7 @@ with open(csvpath, 'r') as csvfile:
             
         # Average change
 net_monthly_average = round(sum(net_change_list) / len(net_change_list) , 2)
-In [25]:
+
 # Export the results to text file 
 with open(csvfile_to_output, "w+") as csvfile:
     csvfile.write(f"PyBank/main.ipynb\n")
@@ -76,7 +77,7 @@ with open(csvfile_to_output, "w+") as csvfile:
     csvfile.write(f"Average Change: ${net_monthly_average}\n")
     csvfile.write(f"Greatest Increase in Profits: {greatest_increase[0]} (${greatest_increase[1]}\n")
     csvfile.write(f"Greatest Decrease in profits: {greatest_decrease[0]}(${greatest_decrease[1]})\n")
-Ine 
+ 
 
 PyBank/main.ipynb
 
