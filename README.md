@@ -30,8 +30,10 @@ In [22]:
 # Open the csv file as object
 
 with open(csvpath, 'r') as csvfile:
-    # Pass in the csv file to the csv.reader() function and return the csvreader object
-    reader = csv.reader(csvfile, delimiter=',')
+
+# Pass in the csv file to the csv.reader() function and return the csvreader object
+   
+   reader = csv.reader(csvfile, delimiter=',')
    
   # Read the header row
     header = next(reader)
