@@ -70,12 +70,19 @@ net_monthly_average = round(sum(net_change_list) / len(net_change_list) , 2)
 
 # Export the results to text file 
 with open(csvfile_to_output, "w+") as csvfile:
+    
     csvfile.write(f"PyBank/main.ipynb\n")
+    
     csvfile.write(f"PyBank/main.ipynb\n")
+    
     csvfile.write(f"Total Months: {total_months}\n")
+    
     csvfile.write(f"Total: ${total_net}\n")
+    
     csvfile.write(f"Average Change: ${net_monthly_average}\n")
+    
     csvfile.write(f"Greatest Increase in Profits: {greatest_increase[0]} (${greatest_increase[1]}\n")
+    
     csvfile.write(f"Greatest Decrease in profits: {greatest_decrease[0]}(${greatest_decrease[1]})\n")
  
 
