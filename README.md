@@ -87,15 +87,9 @@ with open(csvfile_to_output, "w+") as csvfile:
  
 
 PyBank/main.ipynb
-
 PyBank/main.ipynb
-
-Total Months: 87
-
-Total: $38382578
-
-Average Change: $446309.05
-
-Greatest Increase in Profits: Feb-2012 $1926159
-
-Greatest Decrease in profits: Sept-2013 ($2196167)
+Total Months: 22
+Total: $19093448
+Average Change: $0.0
+Greatest Increase in Profits:  ($0
+Greatest Decrease in profits: Jan-2010($0)
