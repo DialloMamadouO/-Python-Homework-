@@ -259,7 +259,7 @@ PyRamen
    "outputs": [],
    "source": [
    
-    "# Calculate profite of each item in the manu data\n",
+    "# Calculate profit of each item in the manu data\n",
     "profit = price - cost"
    ]
   },
@@ -283,7 +283,7 @@ PyRamen
     "# Print out matching manu data\n",
     "    print(f\"Does {sales_item} equal {item}? WE HAVE A MATCH!!!)\n",
     "    print(f\" item: {item}\")\n",
-    "    print(f\" price: ${peice}\")\n",
+    "    print(f\" price: ${price}\")\n",
     "    print(f\" cost: ${cost}\")\n",
     "    print(f\" profit: ${profit}\")\n",
     "      "
@@ -297,7 +297,7 @@ PyRamen
    "source": [
    
     "# Cumilatively add up the metrics for each item key\n",
-    "report[sales_ite][\"01 count\"] += quantity\n",
+    "report[sales_item][\"01 count\"] += quantity\n",
     "report[sales_item][\"02 revenue\"] == price*quantity\n",
     "report[sales_items][\"03 cogs\"] += cost*quantity\n",
     "report[sales_item][\"04 profit\"] += profit*quantity"
