@@ -101,7 +101,8 @@ Greatest Decrease in profits: Jan-2010($0)
 
 
 
-                                                     II__ PyRamen
+
+                                                      PyRamen
 
 
     
@@ -146,7 +147,7 @@ Greatest Decrease in profits: Jan-2010($0)
     "print()\n",
     "print(row)"
 
-"#Line_item_Id, Date, Credit_Card_Number, Quantity, Manu_Item\n",
+"#Line_item_Id,  Date,  Credit_Card_Number,  Quantity,  Manu_Item
     
     "#Initialize sales data variables\n",
     
@@ -168,7 +169,7 @@ Greatest Decrease in profits: Jan-2010($0)
     "#for every row in the sales data, loop over the manu records to determine a match\n",
     "for records in manu:"
 
-"#Item, Category, Description, Price, Cost\n",
+"#Item,  Category,  Description,  Price,  Cost
     
     "#Initialize manu data variables\n",
    
@@ -222,8 +223,5 @@ Greatest Decrease in profits: Jan-2010($0)
   
   
   
-    "line = f\"{key} {value}\\n\"\n",
+    "line = f\"{key} {value},
     "txt_file.write(line)"
-  
-
-
