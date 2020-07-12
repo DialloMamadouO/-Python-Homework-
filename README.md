@@ -212,7 +212,7 @@ Greatest Decrease in profits: Jan-2010($0)
  
   
     "#Write out report to text file\n",
-    "with open(\"report,txt\", 'w') as a txt file:\n",
+    "with open(\"report,txt", 'w') as a txt file:\n",
     "for key, value report.items()"
   
   
