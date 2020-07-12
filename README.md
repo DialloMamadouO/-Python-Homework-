@@ -162,15 +162,19 @@ Greatest Decrease in profits: Jan-2010($0)
   },
   {   
     "#Line_item_Id, Date, Credit_Card_Number, Quantity, Manu_Item\n",
+    
     "#Initialize sales data variables\n",
+    
     "quantity = int(row[3])\n",
     "sales_item = row[4]"
    ]
   },
   {   
     "#If the item value is not in the report, add it as a new entry with initialize metrics\n",
+    
     "#Keys are ordered in logical fashion count, revenue, cost, profit\n",
-    "if sales_item not in report.keys():\n",
+    "if sales_item not in report.keys():
+    \n",
     "    report [sales_item] = {\n",
     "            '01-count':  0,\n",
     "            '02-revenue': 0,\n",
@@ -183,8 +187,10 @@ Greatest Decrease in profits: Jan-2010($0)
   },
   {   
     "#Item, Category, Description, Price, Cost\n",
+    
     "#Initialize manu data variables\n",
-    "item = record[0]\n",
+   
+   "item = record[0]\n",
     "price = float(record[3])\n",
     "cost = float(record[4])"
    ]
