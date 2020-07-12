@@ -104,6 +104,7 @@ PyRamen
    "metadata": {},
    "outputs": [],
    "source": [
+   
     "# Import libraries\n",
     "from pathlib import Path\n",
     "import csv"
@@ -115,6 +116,7 @@ PyRamen
    "metadata": {},
    "outputs": [],
    "source": [
+   
     "# Set file path\n",
     "csvmanupath = Path(\"../../PyRamen/Homework_Python_PyRamen_Resources_menu_data.csv\")\n",
     "csvsalespath = (\"../../PyRamen/Homework_Python_PyRamen_Resources_sales_data.csv\")"
@@ -126,6 +128,7 @@ PyRamen
    "metadata": {},
    "outputs": [],
    "source": [
+   
     "#Initialize list object\n",
     "menu = []\n",
     "sales = []"
@@ -137,6 +140,7 @@ PyRamen
    "metadata": {},
    "outputs": [],
    "source": [
+   
     "# Open the csv file as object\n",
     "with open(csvmanupath) as csvmanufile:\n",
     "    # Pass in the csv file to the csv.reader() function and return the csvreader object\n",
@@ -149,6 +153,7 @@ PyRamen
    "metadata": {},
    "outputs": [],
    "source": [
+   
     "# Skip header\n",
     "next(reader)"
    ]
@@ -159,6 +164,7 @@ PyRamen
    "metadata": {},
    "outputs": [],
    "source": [
+   
     "# Iterate over each row after the header\n",
     "for row in reader\n",
     "manu.append(row)"
@@ -170,6 +176,7 @@ PyRamen
    "metadata": {},
    "outputs": [],
    "source": [
+   
     "# Open the csvsales file as object\n",
     "report = {}"
    ]
@@ -180,6 +187,7 @@ PyRamen
    "metadata": {},
    "outputs": [],
    "source": [
+   
     "# Initialize a row counter variable\n",
     "row_count = 0"
    ]
@@ -190,6 +198,7 @@ PyRamen
    "metadata": {},
    "outputs": [],
    "source": [
+   
     "# Loop over every row \n",
     "for row in sales \n",
     "print()\n",
@@ -202,6 +211,7 @@ PyRamen
    "metadata": {},
    "outputs": [],
    "source": [
+   
     "# Line_item_Id, Date, Credit_Card_Number, Quantity, Manu_Item\n",
     "# Initialize sales data variables\n",
     "quantity = int(row[3])\n",
@@ -214,6 +224,7 @@ PyRamen
    "metadata": {},
    "outputs": [],
    "source": [
+   
     "# If the item value is not in the report, add it as a new entry with initialize metrics\n",
     "# Keys are ordered in logical fashion count, revenue, cost, profit\n",
     "if sales_item not in report.keys():\n",
@@ -233,6 +244,7 @@ PyRamen
    "metadata": {},
    "outputs": [],
    "source": [
+   
     "=# Item, Category, Description, Price, Cost\n",
     "# Initialize manu data variables\n",
     "item = record[0]\n",
@@ -246,6 +258,7 @@ PyRamen
    "metadata": {},
    "outputs": [],
    "source": [
+   
     "# Calculate profite of each item in the manu data\n",
     "profit = price - cost"
    ]
@@ -263,6 +276,7 @@ PyRamen
    "metadata": {},
    "outputs": [],
    "source": [
+   
     "# If the item value in our sales data is equal to any of the items in the manu, then track metrics for that item\n",
     "if sales_item == item\n",
     "\n",
@@ -281,6 +295,7 @@ PyRamen
    "metadata": {},
    "outputs": [],
    "source": [
+   
     "# Cumilatively add up the metrics for each item key\n",
     "report[sales_ite][\"01 count\"] += quantity\n",
     "report[sales_item][\"02 revenue\"] == price*quantity\n",
@@ -294,6 +309,7 @@ PyRamen
    "metadata": {},
    "outputs": [],
    "source": [
+   
     "# Else the sales_item does not equal to any other item in the many so no match\n",
     "else:\n",
     "    print(\"Does\" sales_item, \"rqual\", record[0], ?\" WOO HOO NO MATCH\")"
@@ -305,6 +321,7 @@ PyRamen
    "metadata": {},
    "outputs": [],
    "source": [
+   
     "# Increment the row counter by 1\n",
     "row_count += 1"
    ]
@@ -315,6 +332,7 @@ PyRamen
    "metadata": {},
    "outputs": [],
    "source": [
+   
     "# Print total number of records in sales data\n",
     "print()\n",
     "print(\"Total number of records:\", row_count)\n",
@@ -327,6 +345,7 @@ PyRamen
    "metadata": {},
    "outputs": [],
    "source": [
+   
     "# Write out report to text file\n",
     "with open(\"report,txt\", 'w') as a txt file:\n",
     "    for key, value report.items()"
@@ -338,6 +357,7 @@ PyRamen
    "metadata": {},
    "outputs": [],
    "source": [
+   
     "line = f\"{key} {value}\\n\"\n",
     "txt_file.write(line)"
    ]
