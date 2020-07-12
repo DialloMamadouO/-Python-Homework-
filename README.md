@@ -1,5 +1,5 @@
 # -Python-Homework-
-                                 PyBank                               
+                                 I__ PyBank                               
 
 # Creating a Python script that analyses the records to calculate each of the following
 
@@ -69,6 +69,7 @@ with open(csvpath, 'r') as csvfile:
 net_monthly_average = round(sum(net_change_list) / len(net_change_list) , 2)
 
 # Export the results to text file 
+
 with open(csvfile_to_output, "w+") as csvfile:
     
     csvfile.write(f"PyBank/main.ipynb\n")
@@ -87,16 +88,20 @@ with open(csvfile_to_output, "w+") as csvfile:
  
 
 PyBank/main.ipynb
-PyBank/main.ipynb
+
 Total Months: 22
+
 Total: $19093448
+
 Average Change: $0.0
+
 Greatest Increase in Profits:  ($0
+
 Greatest Decrease in profits: Jan-2010($0)
 
 
 
-                                                      PyRamen
+                                                     II__ PyRamen
 
 
     
