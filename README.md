@@ -1,5 +1,5 @@
 # -Python-Homework-
-                                 I__ PyBank                               
+                                   PyBank                               
 
 # Creating a Python script that analyses the records to calculate each of the following
 
